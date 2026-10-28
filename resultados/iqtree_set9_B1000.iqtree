@@ -1,0 +1,145 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: resultados/aln_clustalo_set9.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 12345
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 9 sequences with 131 amino-acid sites
+Number of constant sites: 55 (= 41.9847% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 55 (= 41.9847% of all sites)
+Number of parsimony informative sites: 44
+Number of distinct site patterns: 101
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Dayhoff+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.1516
+
+ Category  Relative_rate  Proportion
+  1         0.1662         0.2500
+  2         0.5180         0.2500
+  3         1.0212         0.2500
+  4         2.2946         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1148.9603 (s.e. 64.0477)
+Unconstrained log-likelihood (without tree): -581.0660
+Number of free parameters (#branches + #model parameters): 16
+Akaike information criterion (AIC) score: 2329.9206
+Corrected Akaike information criterion (AICc) score: 2334.6925
+Bayesian information criterion (BIC) score: 2375.9238
+
+Total tree length (sum of branch lengths): 2.4268
+Sum of internal branch lengths: 0.7587 (31.2629% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'rhizobium' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
+                          +--humano
+                     +----| (75)
+                     |    +--bartmosca
++--------------------| (85)
+|                    +--------------mosca
+|
+|                 +-----cebada
+|           +-----| (44)
+|           |     |     +--altramuz
+|           |     |  +--| (70)
+|           |     |  |  +--abedul
+|           |     +--| (78)
+|           |        +**vigna
++-----------| (56)
+|           +-------------------ectocarpus
+|
++-----------------------------------------------------------rhizobium
+
+Tree in newick format:
+
+(((humano:0.0444008723,bartmosca:0.0496996950)75:0.0846329751,mosca:0.2257392779)85:0.3135625647,((cebada:0.1017211721,((altramuz:0.0223099905,abedul:0.0419557386)70:0.0208939876,vigna:0.0068369516)78:0.0578615226)44:0.0939400210,ectocarpus:0.3016055677)56:0.1878078390,rhizobium:0.8738628669);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1148.960367
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+                          +--humano
+                     +----| (75)
+                     |    +--bartmosca
++--------------------| (85)
+|                    +--------------mosca
+|
+|                 +-----cebada
+|           +-----| (44)
+|           |     |     +--altramuz
+|           |     |  +--| (70)
+|           |     |  |  +--abedul
+|           |     +--| (78)
+|           |        +--vigna
++-----------| (56)
+|           +-------------------ectocarpus
+|
++-----------------------------------------------------------rhizobium
+
+
+Consensus tree in newick format: 
+
+(((humano:0.0443803575,bartmosca:0.0496988500)75:0.0846323396,mosca:0.2256499889)85:0.3137593135,((cebada:0.1016070983,((altramuz:0.0222922442,abedul:0.0419118556)70:0.0208677688,vigna:0.0068489438)78:0.0578248428)44:0.0946965417,ectocarpus:0.3007904755)56:0.1871249006,rhizobium:0.8732637805);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t resultados/iqtree_set9_B1000.treefile -m "Dayhoff+G4{1.1516}" --length 131
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s resultados/aln_clustalo_set9.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s resultados/aln_clustalo_set9.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct 27 21:31:16 2026
+Total CPU time used: 9.081764 seconds (0h:0m:9s)
+Total wall-clock time used: 8.000334417 seconds (0h:0m:8s)
+

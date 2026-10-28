@@ -1,0 +1,2 @@
+set3	clustalo-R20261028-001614-0565-18522630-p1m	datos/set3.fasta	resultados/aln_clustalo_set3.fasta
+set9	clustalo-R20261028-001625-0783-85075839-p1m	datos/set9.fasta	resultados/aln_clustalo_set9.fasta

@@ -1,0 +1,545 @@
+{
+  "fecha": "2026-10-27",
+  "zona_horaria": "America/Buenos_Aires",
+  "versiones": {
+    "iqtree": "2.3.6 (Linux x86 64-bit, 2024-08-01)",
+    "mafft": "v7.526 (2024/Apr/26)",
+    "clustalo": "Clustal Omega via REST de EBI (https://www.ebi.ac.uk/Tools/services/rest/clustalo)",
+    "biopython": "1.88",
+    "python": "3.14.8",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2"
+  },
+  "ebi_job_ids": {
+    "set3": "clustalo-R20261028-001614-0565-18522630-p1m",
+    "set9": "clustalo-R20261028-001625-0783-85075839-p1m"
+  },
+  "longitudes_alineamiento": {
+    "clustalo_set3": {
+      "n_secuencias": 3,
+      "columnas": 109
+    },
+    "mafft_set3": {
+      "n_secuencias": 3,
+      "columnas": 109
+    },
+    "clustalo_set9": {
+      "n_secuencias": 9,
+      "columnas": 131
+    },
+    "mafft_set9": {
+      "n_secuencias": 9,
+      "columnas": 131
+    }
+  },
+  "identidades_pares_set9": {
+    "bartmosca-humano": {
+      "clustalo": {
+        "identidad": 0.9238,
+        "p_distancia": 0.0762,
+        "identidad_colapsada": 0.9238,
+        "posiciones_comparadas": 105,
+        "identidad_gaps_como_dif": 0.7405
+      },
+      "mafft": {
+        "identidad": 0.9333,
+        "p_distancia": 0.0667,
+        "identidad_colapsada": 0.9238,
+        "posiciones_comparadas": 105,
+        "identidad_gaps_como_dif": 0.7481
+      }
+    },
+    "bartmosca-mosca": {
+      "clustalo": {
+        "identidad": 0.7547,
+        "p_distancia": 0.2453,
+        "identidad_colapsada": 0.7736,
+        "posiciones_comparadas": 106,
+        "identidad_gaps_como_dif": 0.6107
+      },
+      "mafft": {
+        "identidad": 0.7736,
+        "p_distancia": 0.2264,
+        "identidad_colapsada": 0.7736,
+        "posiciones_comparadas": 106,
+        "identidad_gaps_como_dif": 0.626
+      }
+    },
+    "humano-mosca": {
+      "clustalo": {
+        "identidad": 0.7692,
+        "p_distancia": 0.2308,
+        "identidad_colapsada": 0.7692,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.6107
+      },
+      "mafft": {
+        "identidad": 0.7788,
+        "p_distancia": 0.2212,
+        "identidad_colapsada": 0.7692,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.6183
+      }
+    },
+    "cebada-humano": {
+      "clustalo": {
+        "identidad": 0.6154,
+        "p_distancia": 0.3846,
+        "identidad_colapsada": 0.6154,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.4885
+      },
+      "mafft": {
+        "identidad": 0.625,
+        "p_distancia": 0.375,
+        "identidad_colapsada": 0.6154,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.4962
+      }
+    },
+    "altramuz-abedul": {
+      "clustalo": {
+        "identidad": 0.9381,
+        "p_distancia": 0.0619,
+        "identidad_colapsada": 0.9381,
+        "posiciones_comparadas": 113,
+        "identidad_gaps_como_dif": 0.8092
+      },
+      "mafft": {
+        "identidad": 0.9381,
+        "p_distancia": 0.0619,
+        "identidad_colapsada": 0.9381,
+        "posiciones_comparadas": 113,
+        "identidad_gaps_como_dif": 0.8092
+      }
+    },
+    "vigna-abedul": {
+      "clustalo": {
+        "identidad": 0.9464,
+        "p_distancia": 0.0536,
+        "identidad_colapsada": 0.9464,
+        "posiciones_comparadas": 112,
+        "identidad_gaps_como_dif": 0.8092
+      },
+      "mafft": {
+        "identidad": 0.9464,
+        "p_distancia": 0.0536,
+        "identidad_colapsada": 0.9464,
+        "posiciones_comparadas": 112,
+        "identidad_gaps_como_dif": 0.8092
+      }
+    },
+    "cebada-ectocarpus": {
+      "clustalo": {
+        "identidad": 0.6796,
+        "p_distancia": 0.3204,
+        "identidad_colapsada": 0.6796,
+        "posiciones_comparadas": 103,
+        "identidad_gaps_como_dif": 0.5344
+      },
+      "mafft": {
+        "identidad": 0.6893,
+        "p_distancia": 0.3107,
+        "identidad_colapsada": 0.6796,
+        "posiciones_comparadas": 103,
+        "identidad_gaps_como_dif": 0.542
+      }
+    }
+  },
+  "identidades_pares_set3": {
+    "bartmosca-humano": {
+      "clustalo": {
+        "identidad": 0.9238,
+        "p_distancia": 0.0762,
+        "identidad_colapsada": 0.9238,
+        "posiciones_comparadas": 105,
+        "identidad_gaps_como_dif": 0.8899
+      },
+      "mafft": {
+        "identidad": 0.9238,
+        "p_distancia": 0.0762,
+        "identidad_colapsada": 0.9238,
+        "posiciones_comparadas": 105,
+        "identidad_gaps_como_dif": 0.8899
+      }
+    },
+    "bartmosca-mosca": {
+      "clustalo": {
+        "identidad": 0.7547,
+        "p_distancia": 0.2453,
+        "identidad_colapsada": 0.7736,
+        "posiciones_comparadas": 106,
+        "identidad_gaps_como_dif": 0.7339
+      },
+      "mafft": {
+        "identidad": 0.7736,
+        "p_distancia": 0.2264,
+        "identidad_colapsada": 0.7736,
+        "posiciones_comparadas": 106,
+        "identidad_gaps_como_dif": 0.7523
+      }
+    },
+    "humano-mosca": {
+      "clustalo": {
+        "identidad": 0.7692,
+        "p_distancia": 0.2308,
+        "identidad_colapsada": 0.7692,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.7339
+      },
+      "mafft": {
+        "identidad": 0.7692,
+        "p_distancia": 0.2308,
+        "identidad_colapsada": 0.7692,
+        "posiciones_comparadas": 104,
+        "identidad_gaps_como_dif": 0.7339
+      }
+    }
+  },
+  "mosaico_bartmosca": {
+    "ventana_aa": 15,
+    "paso_aa": 5,
+    "n_ventanas": 24,
+    "n_ventanas_con_posiciones_comparables": 22,
+    "ventanas_mas_parecidas_a_humano": 19,
+    "ventanas_mas_parecidas_a_mosca": 3,
+    "ventana_max_delta_humano": {
+      "ventana": "66-80",
+      "ident_humano": 1.0,
+      "delta": 0.3846
+    },
+    "regiones": {
+      "N-terminal (1-25)": {
+        "columnas_alineamiento": "1-46",
+        "ident_humano": 0.6522,
+        "ident_mosca": 0.64,
+        "delta": 0.0122
+      },
+      "resto (26-fin)": {
+        "columnas_alineamiento": "47-131",
+        "ident_humano": 1.0,
+        "ident_mosca": 0.7901,
+        "delta": 0.2099
+      }
+    },
+    "corte_columna_alineamiento": 46
+  },
+  "iqtree_set9": {
+    "modelo": "Dayhoff+G4",
+    "modelo_fijado": false,
+    "alpha_gamma": 1.153,
+    "sitios_informativos": 44,
+    "sitios_constantes": 55,
+    "logL": -1148.9603,
+    "bic": 2375.9237,
+    "longitud_total_arbol": 2.426,
+    "semilla": 12345,
+    "n_secuencias": 9,
+    "n_sitios": 131,
+    "tabla_bic_top": [
+      {
+        "modelo": "Dayhoff+G4",
+        "logL": -1148.96,
+        "aic": 2329.921,
+        "bic": 2375.924,
+        "w_bic": 0.411
+      },
+      {
+        "modelo": "DCMut+G4",
+        "logL": -1149.027,
+        "aic": 2330.053,
+        "bic": 2376.056,
+        "w_bic": 0.385
+      },
+      {
+        "modelo": "Dayhoff+R2",
+        "logL": -1148.398,
+        "aic": 2330.796,
+        "bic": 2379.675,
+        "w_bic": 0.063
+      },
+      {
+        "modelo": "DCMut+R2",
+        "logL": -1148.45,
+        "aic": 2330.901,
+        "bic": 2379.779,
+        "w_bic": 0.0598
+      },
+      {
+        "modelo": "Dayhoff+I+G4",
+        "logL": -1149.144,
+        "aic": 2332.288,
+        "bic": 2381.167,
+        "w_bic": 0.0299
+      },
+      {
+        "modelo": "DCMut+I+G4",
+        "logL": -1149.256,
+        "aic": 2332.512,
+        "bic": 2381.39,
+        "w_bic": 0.0267
+      }
+    ],
+    "ufboot_100_vs_1000": {
+      "humano+bartmosca": {
+        "n_taxones": 2,
+        "ufboot_100": 78.0,
+        "ufboot_1000": 74.5,
+        "diferencia_pp": 3.5,
+        "bootstrap_estandar_100": 59.0
+      },
+      "clado animal (humano+mosca+bartmosca)": {
+        "n_taxones": 3,
+        "ufboot_100": 84.0,
+        "ufboot_1000": 85.1,
+        "diferencia_pp": -1.1,
+        "bootstrap_estandar_100": 81.0
+      },
+      "clado de plantas verdes (cebada+altramuz+abedul+vigna)": {
+        "n_taxones": 4,
+        "ufboot_100": 36.0,
+        "ufboot_1000": 44.4,
+        "diferencia_pp": -8.4,
+        "bootstrap_estandar_100": 29.0
+      },
+      "plantas verdes + ectocarpus": {
+        "n_taxones": 5,
+        "ufboot_100": 53.0,
+        "ufboot_1000": 56.3,
+        "diferencia_pp": -3.3,
+        "bootstrap_estandar_100": 62.0
+      },
+      "todos menos rhizobium (raiz del ingroup)": {
+        "n_taxones": 8,
+        "ufboot_100": 100.0,
+        "ufboot_1000": 100.0,
+        "diferencia_pp": 0.0,
+        "bootstrap_estandar_100": null
+      }
+    },
+    "bootstrap_estandar_100": {
+      "modelo": "Dayhoff+G4",
+      "modelo_fijado": true,
+      "alpha_gamma": 1.1518,
+      "sitios_informativos": 44,
+      "sitios_constantes": 55,
+      "logL": -1148.9603,
+      "bic": 2375.9238,
+      "longitud_total_arbol": 2.4268,
+      "semilla": 12345,
+      "n_secuencias": 9,
+      "n_sitios": 131
+    },
+    "ufboot_100_no_permitido": "IQ-TREE 2.3.6 rechaza -B 100 con el error '#replicates must be >= 1000'; la comparacion 100 vs 1000 se hizo submuestreando las 1000 replicas guardadas con --boot-trees",
+    "topologia_newick": "(((humano:0.0443950531,bartmosca:0.0496997480)77.2/75:0.0846090960,mosca:0.2257317127)88.2/86:0.3134132475,((cebada:0.1016766776,((altramuz:0.0222977052,abedul:0.0419460216)75.8/71:0.0208774470,vigna:0.0068399353)85.9/76:0.0578497744)28.1/45:0.0940594585,ectocarpus:0.3013481749)35.8/56:0.1878695972,rhizobium:0.8733520988);",
+    "rama_outgroup_completa": 0.873352,
+    "soportes_por_nodo": {
+      "abedul+altramuz+cebada+ectocarpus+vigna": {
+        "n_taxones": 5,
+        "sh_alrt": 35.8,
+        "ufboot": 56.0,
+        "bootstrap_estandar": 62.0,
+        "largo_rama": 0.18787
+      },
+      "abedul+altramuz+cebada+vigna": {
+        "n_taxones": 4,
+        "sh_alrt": 28.1,
+        "ufboot": 45.0,
+        "bootstrap_estandar": 29.0,
+        "largo_rama": 0.094059
+      },
+      "abedul+altramuz+vigna": {
+        "n_taxones": 3,
+        "sh_alrt": 85.9,
+        "ufboot": 76.0,
+        "bootstrap_estandar": 84.0,
+        "largo_rama": 0.05785
+      },
+      "bartmosca+humano+mosca": {
+        "n_taxones": 3,
+        "sh_alrt": 88.2,
+        "ufboot": 86.0,
+        "bootstrap_estandar": 81.0,
+        "largo_rama": 0.313413
+      },
+      "bartmosca+humano": {
+        "n_taxones": 2,
+        "sh_alrt": 77.2,
+        "ufboot": 75.0,
+        "bootstrap_estandar": 59.0,
+        "largo_rama": 0.084609
+      },
+      "abedul+altramuz": {
+        "n_taxones": 2,
+        "sh_alrt": 75.8,
+        "ufboot": 71.0,
+        "bootstrap_estandar": 70.0,
+        "largo_rama": 0.020877
+      }
+    },
+    "longitudes_rama_terminales": {
+      "rhizobium": 0.436676,
+      "mosca": 0.225732,
+      "humano": 0.044395,
+      "bartmosca": 0.0497,
+      "ectocarpus": 0.301348,
+      "cebada": 0.101677,
+      "vigna": 0.00684,
+      "altramuz": 0.022298,
+      "abedul": 0.041946
+    },
+    "newick_enraizado": "(rhizobium:0.43667605,((mosca:0.22573171,(humano:0.044395053,bartmosca:0.049699748)77.2/75:0.084609096)88.2/86:0.31341325,(ectocarpus:0.30134817,(cebada:0.10167668,(vigna:0.0068399353,(altramuz:0.022297705,abedul:0.041946022)75.8/71:0.020877447)85.9/76:0.057849774)28.1/45:0.094059458)35.8/56:0.1878696):0.43667605):0;"
+  },
+  "iqtree_set3": {
+    "modelo": "Dayhoff+G4",
+    "modelo_fijado": true,
+    "alpha_gamma": 3.0901,
+    "sitios_informativos": 0,
+    "sitios_constantes": 80,
+    "logL": -476.6251,
+    "bic": 972.0155,
+    "longitud_total_arbol": 0.365,
+    "semilla": 12345,
+    "n_secuencias": 3,
+    "n_sitios": 109,
+    "tabla_bic_top": [
+      {
+        "modelo": "DCMut",
+        "logL": -476.643,
+        "aic": 959.287,
+        "bic": 967.361,
+        "w_bic": 0.366
+      },
+      {
+        "modelo": "Dayhoff",
+        "logL": -476.69,
+        "aic": 959.38,
+        "bic": 967.454,
+        "w_bic": 0.349
+      },
+      {
+        "modelo": "WAG",
+        "logL": -478.718,
+        "aic": 963.437,
+        "bic": 971.511,
+        "w_bic": 0.0459
+      },
+      {
+        "modelo": "DCMut+I",
+        "logL": -476.552,
+        "aic": 961.103,
+        "bic": 971.868,
+        "w_bic": 0.0384
+      },
+      {
+        "modelo": "Blosum62",
+        "logL": -478.923,
+        "aic": 963.846,
+        "bic": 971.92,
+        "w_bic": 0.0374
+      },
+      {
+        "modelo": "DCMut+G4",
+        "logL": -476.586,
+        "aic": 961.172,
+        "bic": 971.937,
+        "w_bic": 0.0371
+      },
+      {
+        "modelo": "Dayhoff+I",
+        "logL": -476.594,
+        "aic": 961.188,
+        "bic": 971.953,
+        "w_bic": 0.0368
+      },
+      {
+        "modelo": "Dayhoff+G4",
+        "logL": -476.628,
+        "aic": 961.256,
+        "bic": 972.022,
+        "w_bic": 0.0356
+      },
+      {
+        "modelo": "PMB",
+        "logL": -480.697,
+        "aic": 967.395,
+        "bic": 975.469,
+        "w_bic": 0.00635
+      },
+      {
+        "modelo": "LG",
+        "logL": -480.853,
+        "aic": 967.705,
+        "bic": 975.779,
+        "w_bic": 0.00544
+      },
+      {
+        "modelo": "WAG+I",
+        "logL": -478.681,
+        "aic": 965.363,
+        "bic": 976.128,
+        "w_bic": 0.00457
+      },
+      {
+        "modelo": "WAG+G4",
+        "logL": -478.705,
+        "aic": 965.41,
+        "bic": 976.175,
+        "w_bic": 0.00446
+      }
+    ],
+    "referencia_model_finder": {
+      "modelo": "DCMut",
+      "modelo_fijado": false,
+      "alpha_gamma": null,
+      "sitios_informativos": 0,
+      "sitios_constantes": 80,
+      "logL": -476.6433,
+      "bic": 967.3606,
+      "longitud_total_arbol": 0.3514,
+      "semilla": 12345,
+      "n_secuencias": 3,
+      "n_sitios": 109
+    },
+    "sitios_variables_criterio_3_taxones": 29,
+    "sitios_informativos_criterio_3_taxones": 25,
+    "nota_enraizamiento": "con 3 taxones el arbol no enraizado es una trifurcacion unica; no hay outgroup posible dentro del set",
+    "newick_sin_enraizar": "(humano:0.0488689776,mosca:0.2752227133,bartmosca:0.0409441262);",
+    "longitudes_rama_terminales": {
+      "humano": 0.048869,
+      "mosca": 0.275223,
+      "bartmosca": 0.040944
+    }
+  },
+  "figuras": {
+    "fig_arbol_set9.png": "resultados/fig_arbol_set9.png",
+    "fig_arbol_set3.png": "resultados/fig_arbol_set3.png",
+    "fig_ventanas_bartmosca.png": "resultados/fig_ventanas_bartmosca.png",
+    "fig_heatmap_identidad.png": "resultados/fig_heatmap_identidad.png"
+  },
+  "archivos_clave": {
+    "aln_clustalo_set9.fasta": "resultados/aln_clustalo_set9.fasta",
+    "aln_mafft_set9.fasta": "resultados/aln_mafft_set9.fasta",
+    "aln_clustalo_set3.fasta": "resultados/aln_clustalo_set3.fasta",
+    "aln_mafft_set3.fasta": "resultados/aln_mafft_set3.fasta",
+    "pairwise_clustalo_set9.csv": "resultados/pairwise_clustalo_set9.csv",
+    "pairwise_mafft_set9.csv": "resultados/pairwise_mafft_set9.csv",
+    "bartmosca_ventanas.csv": "resultados/bartmosca_ventanas.csv",
+    "bartmosca_regiones.csv": "resultados/bartmosca_regiones.csv",
+    "soportes_nodos.csv": "resultados/soportes_nodos.csv",
+    "tree_set9_rooted.nwk": "resultados/tree_set9_rooted.nwk",
+    "tree_set9_unrooted.nwk": "resultados/tree_set9_unrooted.nwk",
+    "tree_set3.nwk": "resultados/tree_set3.nwk",
+    "iqtree_set9.treefile": "resultados/iqtree_set9.treefile",
+    "iqtree_set9.iqtree": "resultados/iqtree_set9.iqtree",
+    "iqtree_set9_boot100.treefile": "resultados/iqtree_set9_boot100.treefile",
+    "iqtree_set9_boot100.iqtree": "resultados/iqtree_set9_boot100.iqtree",
+    "iqtree_set9_B1000.treefile": "resultados/iqtree_set9_B1000.treefile",
+    "iqtree_set9_B1000.ufboot": "resultados/iqtree_set9_B1000.ufboot",
+    "boot_comparacion.csv": "resultados/boot_comparacion.csv",
+    "iqtree_set3.treefile": "resultados/iqtree_set3.treefile",
+    "iqtree_set3.iqtree": "resultados/iqtree_set3.iqtree",
+    "iqtree_set3_mfp.iqtree": "resultados/iqtree_set3_mfp.iqtree"
+  }
+}

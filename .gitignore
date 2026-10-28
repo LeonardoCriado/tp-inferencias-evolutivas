@@ -1,0 +1,21 @@
+# Herramientas descargadas (binarios, no se versionan)
+tools/
+
+# Caches de matplotlib / Python
+.mplcache/
+__pycache__/
+*.pyc
+
+# Intermedios pesados de IQ-TREE (regenerables)
+resultados/*.ckp.gz
+resultados/*.model.gz
+resultados/*.mldist
+resultados/*.bionj
+resultados/*.splits.nex
+resultados/*.stdout.log
+resultados/*.log
+resultados/*.boottrees
+resultados/clustalo_curl.err
+
+# Basura del sistema
+.DS_Store

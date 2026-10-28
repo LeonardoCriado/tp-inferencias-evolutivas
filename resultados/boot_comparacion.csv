@@ -1,0 +1,6 @@
+nodo,n_taxones,ufboot_100_replicas,ufboot_1000_replicas,diferencia_pp,ufboot_1000_segun_treefile,bootstrap_estandar_100
+humano+bartmosca,2,78.0,74.5,3.5,75.0,59.0
+clado animal (humano+mosca+bartmosca),3,84.0,85.1,-1.1,85.0,81.0
+clado de plantas verdes (cebada+altramuz+abedul+vigna),4,36.0,44.4,-8.4,44.0,29.0
+plantas verdes + ectocarpus,5,53.0,56.3,-3.3,56.0,62.0
+todos menos rhizobium (raiz del ingroup),8,100.0,100.0,0.0,,

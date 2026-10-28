@@ -1,0 +1,3 @@
+region,columnas_alineamiento,n_posiciones,ident_humano,ident_mosca,delta_humano_menos_mosca
+N-terminal (1-25),1-46,23,0.6522,0.64,0.0122
+resto (26-fin),47-131,82,1.0,0.7901,0.2099

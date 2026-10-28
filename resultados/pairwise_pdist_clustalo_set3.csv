@@ -1,0 +1,4 @@
+seq,humano,mosca,bartmosca
+humano,,0.2308,0.0762
+mosca,0.2308,,0.2453
+bartmosca,0.0762,0.2453,

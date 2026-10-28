@@ -1,0 +1,91 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: resultados/aln_clustalo_set3.fasta
+Type of analysis: tree reconstruction
+Random seed number: 12345
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 3 sequences with 109 amino-acid sites
+Number of constant sites: 80 (= 73.3945% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 80 (= 73.3945% of all sites)
+Number of parsimony informative sites: 0
+Number of distinct site patterns: 49
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Dayhoff+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 3.0901
+
+ Category  Relative_rate  Proportion
+  1         0.3961         0.2500
+  2         0.7364         0.2500
+  3         1.0829         0.2500
+  4         1.7846         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -476.6251 (s.e. 23.4562)
+Unconstrained log-likelihood (without tree): -379.1917
+Number of free parameters (#branches + #model parameters): 4
+Akaike information criterion (AIC) score: 961.2501
+Corrected Akaike information criterion (AICc) score: 961.6347
+Bayesian information criterion (BIC) score: 972.0155
+
+Total tree length (sum of branch lengths): 0.3650
+Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'humano' is drawn at root
+
++---------humano
+|
++-----------------------------------------------------------mosca
+|
++-------bartmosca
+
+Tree in newick format:
+
+(humano:0.0488689776,mosca:0.2752227133,bartmosca:0.0409441262);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t resultados/iqtree_set3.treefile -m "Dayhoff+G4{3.09015}" --length 109
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s resultados/aln_clustalo_set3.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s resultados/aln_clustalo_set3.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct 27 21:30:32 2026
+Total CPU time used: 0.237966 seconds (0h:0m:0s)
+Total wall-clock time used: 0.270453 seconds (0h:0m:0s)
+

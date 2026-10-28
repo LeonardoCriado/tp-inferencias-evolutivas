@@ -1,0 +1,4 @@
+par,n_columns,n_posiciones_ambas,matches_pairdel,ident_pairdel,ident_colapsada,ident_full,p_dist,gaps_a,gaps_b
+humano-mosca,109,104,80,0.7692,0.7692,0.7339,0.2308,4,1
+humano-bartmosca,109,105,97,0.9238,0.9238,0.8899,0.0762,4,2
+mosca-bartmosca,109,106,80,0.7547,0.7736,0.7339,0.2453,1,2
