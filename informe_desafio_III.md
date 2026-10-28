@@ -111,7 +111,7 @@ Otros pasos antes de escribir conclusiones: mirar los **soportes** de cada nodo 
 
 *Sobre FigTree:* las figuras de este informe salieron de los mismos `.treefile` con Biopython y matplotlib, y los archivos quedan listos para abrir en FigTree (`resultados/iqtree_set9.treefile`), enraizar en la rama de rhizobium y exportar. Los pasos concretos están en [`resultados/resumen_analisis.md`](resultados/resumen_analisis.md).
 
-## Qué dicen los resultados juntos
+## Conclusiones
 
 1. La secuencia del "moscahumano" es **hermana del citocromo c humano**, con soporte moderado (UFBoot 75 / SH-aLRT 77 / bootstrap 59, por debajo de los cortes 95/80/70). No es hermana de la mosca. La evidencia más fuerte no es ese nodo sino la identidad (92,4%) y la distancia (p = 0,076).
 2. El clado de metazoos (bartmosca + humano + mosca) tiene soporte más alto (86/88; 81 de bootstrap estándar): el marcador reconoce que las tres son animales, y dentro de ellos bartmosca y humano son el par más cercano.

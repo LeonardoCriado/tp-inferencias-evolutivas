@@ -1,6 +1,6 @@
 # Desafío II — El alineamiento
 
-Sin un alineamiento correcto no hay comparación sitio a sitio posible. Lo que pide el TP es el alineamiento del punto I; además lo corrí también para el set completo de 9 secuencias, porque es el que después alimenta la filogenia del [Desafío III](informe_desafio_III.md). El por qué de la importancia de este paso está más abajo.
+En este desafío alineé las tres secuencias del punto I y el conjunto completo de 9 secuencias, usado luego para la filogenia del [Desafío III](informe_desafio_III.md). También comparé dos programas para evaluar si las conclusiones dependían del alineador.
 
 ## Qué corrí
 
@@ -17,7 +17,7 @@ Los insumos y los alineamientos están en [`datos/`](datos/) y [`resultados/`](r
 
 ## Resultado para las tres secuencias del punto I
 
-109 columnas, 7 gaps, todos en los extremos y en el N-terminal. Las columnas 19 a 23 contienen el motivo de unión al grupo hemo **Cys-X-X-Cys-His** (`CAQCH` en bartmosca y mosca, `CSQCH` en humano). Ojo con la numeración: son los residuos Cys15, Cys18 e His19 de la secuencia completa (que en la proteína madura se numeran Cys14, Cys17 y His18). La metionina axial (Met81 completa / Met80 madura) también queda alineada en la misma columna en las tres. Esas dos comprobaciones son las que uso para saber que el núcleo está bien alineado: si el motivo se hubiera corrido, el alineamiento no serviría.
+El alineamiento de las tres secuencias tiene 109 columnas y 7 gaps, ubicados en los extremos y en la región N-terminal. Las columnas 19 a 23 contienen el motivo de unión al grupo hemo **Cys-X-X-Cys-His** (`CAQCH` en bartmosca y mosca, `CSQCH` en humano). Corresponde a Cys15, Cys18 e His19 de la secuencia completa (Cys14, Cys17 e His18 en la proteína madura). La metionina axial (Met81 completa / Met80 madura) también queda alineada en la misma columna en las tres secuencias. Estos motivos sirven como referencia para revisar la alineación del núcleo.
 
 ```
 humano    ----MGDVEKGKKIFIMKCSQCHTVEKGGKHKTGPNLHGLFGRKTGQAPGYSYTAANKNKGIIWGEDTLMEYLENPKKYIPGTKMIFVGIKKKEERADLIAYLKKATNE
@@ -25,7 +25,7 @@ mosca     MGVPAGDVEKGKKLFVQRCAQCHTVEAGGKHKVGPNLHGLIGRKTGQAAGFAYTDANKAKGITWNEDTLF
 bartmosca --MGSGDAENGKKIFVQKCAQCHTYEVGGKHKTGPNLHGLFGRKTGQAPGYSYTAANKNKGIIWGEDTLMEYLENPKKYIPGTKMIFVGIKKKEERADLIAYLKKATNE
 ```
 
-Lo que se ve a simple vista:
+En el alineamiento se observa que:
 
 - El **núcleo conservado** (desde `GGKHKTG` hasta el final) es prácticamente un calco entre las tres secuencias; el único gap de ese tramo es el terminal de la mosca.
 - Las diferencias de bartmosca con el humano se concentran **antes de la columna 30**: el alineador pone 2 residuos extra en bartmosca y resuelve el resto del N-terminal con sustituciones.
@@ -44,7 +44,7 @@ Los dos alineadores coinciden en la longitud del alineamiento y en el núcleo; d
 
 Para lo que importa en este TP, la conclusión es estable: bartmosca es ~92% idéntica al humano y ~76% a la mosca con cualquiera de los dos alineadores.
 
-## La parte delicada: el N-terminal
+## Región N-terminal
 
 El tramo inicial es el único lugar donde el alineamiento es ambiguo, y no por culpa del software: las secuencias son `MGSGDAENG…` (bartmosca) y `MGDVEKG…` (humano), sin una correspondencia única. Clustal Omega resuelve los dos residuos extra al principio; MAFFT los corre dos columnas:
 
@@ -57,9 +57,9 @@ MAFFT           bartmosca  MG--SGDAENGKKIFVQKCAQCHT
 
 Cambia dónde se ubican los gaps, no la composición de residuos ni la conclusión. Pero es un recordatorio concreto de lo que dice el TP sobre que solo el alineamiento correcto produce inferencias correctas: en esta región no hay una respuesta única, hay que decidirla a mano (mirando la estructura, el motivo CXXCH y, si se puede, secuencias más cercanas). Lo que no conviene es aceptar el primer alineamiento automático y sacar conclusiones al residuo exacto en esa zona.
 
-## Por qué el alineamiento es el paso crítico
+## Revisión del alineamiento
 
-Un alineamiento múltiple establece correspondencia posicional: la columna 20 de humano y la columna 20 de bartmosca representan el mismo sitio en el ancestro común. Si esa correspondencia está mal, todo lo que sigue está mal: la identidad sube o baja artificialmente, la p-distancia se infla (porque un residuo homólogo desplazado cuenta como dos diferencias), y el árbol cambia de topología o de soporte. No es un problema teórico: es la razón por la que la literatura de benchmarks de alineamiento (Iantorno *et al.* 2014; Ashkenazy *et al.* 2019) insiste en validar el alineamiento antes de inferir filogenia.
+Un alineamiento múltiple establece correspondencias entre posiciones de las secuencias. Si esas correspondencias son incorrectas, pueden cambiar las identidades, las distancias y la topología o el soporte del árbol. Por eso revisé los motivos conservados y la ubicación de los gaps antes de usar el alineamiento en los análisis posteriores.
 
 En este caso las comprobaciones que hice fueron:
 
